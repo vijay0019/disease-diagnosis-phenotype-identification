@@ -1,6 +1,8 @@
 # Models
 models/
 model-download-scripts/config.json
+fine_tuned_models/
+dataset/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
