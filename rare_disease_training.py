@@ -5,7 +5,7 @@
 # Cite: https://www.datacamp.com/tutorial/fine-tuning-llama-3-2
 
 import os, torch, wandb, requests
-#import bitsandbytes as bnb
+import evaluate
 
 from peft import PeftModel
 from PIL import Image
@@ -13,7 +13,6 @@ from sklearn.metrics import classification_report
 from transformers import ( 
     AutoModelForCausalLM,
     AutoTokenizer,
-#     BitsAndBytesConfig,
     EarlyStoppingCallback,
     HfArgumentParser,
     IntervalStrategy,
@@ -47,9 +46,6 @@ from huggingface_hub import login
 
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
-#os.environ["CUDA_LAUNCH_BLOCKING"] = 1
-
-#user_secrets = UserSecretsClient()
 
 hf_token = config["hf_token"]
 login(token = hf_token)
@@ -63,8 +59,8 @@ run = wandb.init(
 )
 
 # Meta Llama 3.2 3B Instruct
-base_model = "/data/user/bsindala/PhD/CS762-NaturalLanguageProcessing/disease-classification-generation/models/Meta-Llama-3.2-3B-Instruct"
-new_model = "/data/user/bsindala/PhD/CS762-NaturalLanguageProcessing/disease-classification-generation/fine_tuned_models/Llama-3.2-3B-Instruct-Rare-Disease_v3"
+base_model = "/data/user/bsindala/PhD/CS762-NaturalLanguageProcessing/disease-diagnosis-phenotype-identification/models/Meta-Llama-3.2-3B-Instruct"
+new_model = "/data/user/bsindala/PhD/CS762-NaturalLanguageProcessing/disease-diagnosis-phenotype-identification/fine_tuned_models/Llama-3.2-3B-Instruct-Rare-Disease_v3"
 
 def read_files(data_dir):
     texts = []
@@ -78,9 +74,9 @@ def read_files(data_dir):
                 annotations.append(f.read())
     return texts, annotations
 
-train_texts, train_annotations = read_files("/data/user/bsindala/PhD/CS762-NaturalLanguageProcessing/disease-classification-generation/dataset/RareDis-v1/train")
-dev_texts, dev_annotations = read_files("/data/user/bsindala/PhD/CS762-NaturalLanguageProcessing/disease-classification-generation/dataset/RareDis-v1/dev")
-test_texts, test_annotations = read_files("/data/user/bsindala/PhD/CS762-NaturalLanguageProcessing/disease-classification-generation/dataset/RareDis-v1/test")
+train_texts, train_annotations = read_files("/data/user/bsindala/PhD/CS762-NaturalLanguageProcessing/disease-diagnosis-phenotype-identification/dataset/RareDis-v1/train")
+dev_texts, dev_annotations = read_files("/data/user/bsindala/PhD/CS762-NaturalLanguageProcessing/disease-diagnosis-phenotype-identification/dataset/RareDis-v1/dev")
+test_texts, test_annotations = read_files("/data/user/bsindala/PhD/CS762-NaturalLanguageProcessing/disease-diagnosis-phenotype-identification/dataset/RareDis-v1/test")
 
 # Debugging: Print the contents of train_texts and train_annotations
 print("Train Texts:", train_texts)
@@ -211,6 +207,27 @@ tokenized_train = train_dataset.map(tokenize_function, batched=True)
 tokenized_dev = dev_dataset.map(tokenize_function, batched=True)
 tokenized_test = test_dataset.map(tokenize_function, batched=True)
 
+# Accuracy
+accuracy_metric = evaluate.load("accuracy")
+precision_metric = evaluate.load("precision")
+recall_metric = evaluate.load("recall")
+f1_metric = evaluate.load("f1")
+
+# Define the compute_metrics function
+def compute_metrics(p):
+    preds = p.predictions.argmax(-1)
+    labels = p.label_ids
+    accuracy = accuracy_metric.compute(predictions=preds, references=labels)
+    precision = precision_metric.compute(predictions=preds, references=labels, average="weighted")
+    recall = recall_metric.compute(predictions=preds, references=labels, average="weighted")
+    f1 = f1_metric.compute(predictions=preds, references=labels, average="weighted")
+    return {
+        "accuracy": accuracy["accuracy"],
+        "precision": precision["precision"],
+        "recall": recall["recall"],
+        "f1": f1["f1"],
+    }
+
 # Hyperparameter
 training_args = TrainingArguments(
     output_dir=new_model,
@@ -229,22 +246,30 @@ training_args = TrainingArguments(
     bf16=False,
     group_by_length=True,
     report_to="wandb",
+    remove_unused_columns=False,
 )
 
 trainer = SFTTrainer(
     model=model,
     train_dataset=train_dataset, #tokenized_train,#
-    eval_dataset=dev_dataset, #tokenized_dev,#
+    eval_dataset=test_dataset, #tokenized_dev,#
     peft_config=peft_config,
     max_seq_length=512,
     dataset_text_field="text",
     tokenizer=tokenizer,
     args=training_args,
     packing=False,
+    compute_metrics=compute_metrics,
 )
 
 # Train
 trainer.train()
+
+# Evaluate the model
+results = trainer.evaluate()
+
+# Print the results
+print(results)
 
 # Merge adapters
 # Merge LoRA adapters into the base model
