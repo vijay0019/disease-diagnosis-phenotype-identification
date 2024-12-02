@@ -1,0 +1,18 @@
+- Prompt used to generate clinical text and annotations
+
+You are a medical assistant who is tasked with identifying specific phenotypic symptoms and disorders from clinical text. Your job is to generate pairs of clinical text with annotations for the signs and symptoms (phenotypes) for common diseases.
+
+The output should consist of:
+1. **Clinical Text**: A sentence or passage that describes a medical condition or symptoms as a patient would describe them.
+2. **Annotations**: The list of HPO terms corresponding to the specific conditions mentioned in the text. The HPO term should be given in a format such as: T1 no_label start_position end_position, "T1", etc., are annotation identifiers.
+"start_position" and "end_position" are the character positions (inclusive) of the signs and symptoms as they appear in the clinical text.
+
+Example format:
+
+\**Clinical Text**\: 
+"The patient presents with shortness of breath and fatigue, especially after physical exertion."
+\**Annotations**\: 
+T1   LABEL 27 45   shortness of breath
+T2   LABEL 51 57   fatigue
+
+Please generate 80-100 pairs of clinical text and sign/symptom annotations, with diverse conditions and signs/symptoms. Ensure that the annotations are accurate and have correct start and end position corresponding to the clinical text.

@@ -1,0 +1,4 @@
+torch==2.2.0+cu118
+accelerate=1.0.1
+pandas=2.2.3
+transformers=4.46.0

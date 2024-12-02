@@ -1,4 +1,4 @@
-- Prompt to generate the test set:
+- Prompt to generate the Llama test set:
 
 You are a helpful assistant. Please generate a list of medical symptoms along with the disease they are most commonly associated with. The format should be:
 1. **User Input** (A description of the symptoms in a natural conversational style, as if the patient is describing them to a doctor.)
