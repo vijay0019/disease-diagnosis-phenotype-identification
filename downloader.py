@@ -2,11 +2,16 @@ from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
 import torch
 import json
 import gc
+import os
 
-save_dir = '/data/user/bsindala/PhD/CS762-NaturalLanguageProcessing/disease-classification-generation/models/Llama-3.1-Nemotron-70B-Instruct'
+from config import config
 
-model_name = "meta-llama/Llama-3.2-3B-Instruct"
-hf_token = json.load(open('config.json', 'r'))['hf_token']
+project_dir = config['project_path']
+
+save_dir = os.path.join(project_dir, 'models', 'Meta-Llama-3.2-11B-Vision-Instruct')
+
+model_name = "meta-llama/Llama-3.2-11B-Vision-Instruct"
+hf_token = config['hf_token'] #json.load(open('config.json', 'r'))['hf_token']
 
 # bnb_config = BitsAndBytesConfig(
 #     load_in_4bit=True,
