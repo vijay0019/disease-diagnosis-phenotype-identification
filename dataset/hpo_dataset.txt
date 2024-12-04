@@ -1,0 +1,874 @@
+---
+
+**Clinical Text**:  
+"The patient reports experiencing persistent dry cough and a slight fever for the past week."  
+**Annotations**:  
+T1   LABEL 26 36   dry cough  
+T2   LABEL 41 45   fever  
+
+---
+
+**Clinical Text**:  
+"She complains of swelling and pain in the left ankle after an injury during a soccer game."  
+**Annotations**:  
+T1   LABEL 25 32   swelling  
+T2   LABEL 37 41   pain  
+T3   LABEL 51 55   left ankle  
+
+---
+
+**Clinical Text**:  
+"After eating, the patient feels bloated and frequently has heartburn."  
+**Annotations**:  
+T1   LABEL 28 35   bloated  
+T2   LABEL 51 58   heartburn  
+
+---
+
+**Clinical Text**:  
+"The patient has a history of severe headaches, sometimes accompanied by nausea and vomiting."  
+**Annotations**:  
+T1   LABEL 29 40   headaches  
+T2   LABEL 56 62   nausea  
+T3   LABEL 67 75   vomiting  
+
+---
+
+**Clinical Text**:  
+"He is experiencing frequent urination and excessive thirst, which has been increasing over the last few days."  
+**Annotations**:  
+T1   LABEL 16 31   frequent urination  
+T2   LABEL 36 52   excessive thirst  
+
+---
+
+**Clinical Text**:  
+"The patient presents with a rash on the arms, which appears red and itchy."  
+**Annotations**:  
+T1   LABEL 25 29   rash  
+T2   LABEL 38 42   red  
+T3   LABEL 47 51   itchy  
+
+---
+
+**Clinical Text**:  
+"The patient has developed new-onset joint stiffness and muscle weakness in the morning, which improves throughout the day."  
+**Annotations**:  
+T1   LABEL 24 40   joint stiffness  
+T2   LABEL 45 60   muscle weakness  
+T3   LABEL 67 71   morning  
+
+---
+
+**Clinical Text**:  
+"She has been feeling unusually fatigued, especially after minimal physical activity."  
+**Annotations**:  
+T1   LABEL 22 30   fatigue  
+T2   LABEL 62 83   minimal physical activity  
+
+---
+
+**Clinical Text**:  
+"The patient has noticed blurred vision and occasional difficulty seeing in dim light."  
+**Annotations**:  
+T1   LABEL 24 38   blurred vision  
+T2   LABEL 43 60   difficulty seeing in dim light  
+
+---
+
+**Clinical Text**:  
+"The child has been coughing persistently and has had a runny nose for the past three days."  
+**Annotations**:  
+T1   LABEL 24 32   coughing  
+T2   LABEL 49 61   runny nose  
+
+---
+
+**Clinical Text**:  
+"The patient complains of chest tightness and shortness of breath, particularly during physical activity."  
+**Annotations**:  
+T1   LABEL 22 37   chest tightness  
+T2   LABEL 42 60   shortness of breath  
+
+---
+
+**Clinical Text**:  
+"The patient has been feeling nauseous and lightheaded, especially after standing up quickly."  
+**Annotations**:  
+T1   LABEL 20 28   nauseous  
+T2   LABEL 33 44   lightheaded  
+
+---
+
+**Clinical Text**:  
+"The patient reports having a constant sore throat and swollen lymph nodes for the past two days."  
+**Annotations**:  
+T1   LABEL 24 36   sore throat  
+T2   LABEL 41 58   swollen lymph nodes  
+
+---
+
+**Clinical Text**:  
+"She has been experiencing pain in the lower abdomen along with frequent episodes of diarrhea."  
+**Annotations**:  
+T1   LABEL 24 40   pain in the lower abdomen  
+T2   LABEL 55 62   diarrhea  
+
+---
+
+**Clinical Text**:  
+"The patient’s skin has become unusually pale, and he feels excessively cold even in warm environments."  
+**Annotations**:  
+T1   LABEL 35 39   pale  
+T2   LABEL 44 74   excessively cold  
+
+---
+
+**Clinical Text**:  
+"He presents with a headache that worsens when bending over or coughing."  
+**Annotations**:  
+T1   LABEL 18 27   headache  
+T2   LABEL 42 59   worsens when bending over  
+
+---
+
+**Clinical Text**:  
+"The patient reports joint pain and a noticeable rash on both wrists, which appear to be spreading."  
+**Annotations**:  
+T1   LABEL 23 32   joint pain  
+T2   LABEL 37 41   rash  
+T3   LABEL 46 54   both wrists  
+
+---
+
+**Clinical Text**:  
+"She has been coughing up mucus and feels congested in her chest for several days."  
+**Annotations**:  
+T1   LABEL 24 35   coughing up mucus  
+T2   LABEL 40 58   congested in her chest  
+
+---
+
+**Clinical Text**:  
+"The patient describes a dull pain in the lower back, which radiates to the legs, especially after sitting for long periods."  
+**Annotations**:  
+T1   LABEL 26 39   dull pain in the lower back  
+T2   LABEL 44 54   radiates to the legs  
+
+---
+
+**Clinical Text**:  
+"The child has been frequently sneezing and has watery eyes, especially in the morning."  
+**Annotations**:  
+T1   LABEL 25 32   sneezing  
+T2   LABEL 37 46   watery eyes  
+
+---
+
+**Clinical Text**:  
+"The patient complains of a persistent headache and sensitivity to light."  
+**Annotations**:  
+T1   LABEL 24 34   persistent headache  
+T2   LABEL 39 59   sensitivity to light  
+
+---
+
+**Clinical Text**:  
+"She is experiencing severe fatigue and dizziness after walking short distances."  
+**Annotations**:  
+T1   LABEL 26 33   severe fatigue  
+T2   LABEL 38 46   dizziness  
+
+---
+
+**Clinical Text**:  
+"The patient has been experiencing a loss of appetite and unexplained weight loss over the past month."  
+**Annotations**:  
+T1   LABEL 25 39   loss of appetite  
+T2   LABEL 44 65   unexplained weight loss  
+
+---
+
+**Clinical Text**:  
+"The patient reports frequent episodes of heart palpitations, which last for a few minutes each time."  
+**Annotations**:  
+T1   LABEL 28 47   heart palpitations  
+T2   LABEL 52 61   last for a few minutes  
+
+---
+
+**Clinical Text**:  
+"He describes pain and swelling in his knee joint, which makes it difficult to walk."  
+**Annotations**:  
+T1   LABEL 20 29   pain in his knee joint  
+T2   LABEL 34 40   swelling  
+
+---
+
+**Clinical Text**:  
+"The patient reports a persistent dry mouth and frequent thirst, even after drinking large amounts of water."  
+**Annotations**:  
+T1   LABEL 24 34   dry mouth  
+T2   LABEL 39 52   frequent thirst  
+
+---
+
+**Clinical Text**:  
+"The patient feels a burning sensation in the chest after eating and has frequent burping."  
+**Annotations**:  
+T1   LABEL 24 42   burning sensation in the chest  
+T2   LABEL 47 60   frequent burping  
+
+---
+
+**Clinical Text**:  
+"The patient has noted a rapid increase in heart rate and sweating without any apparent cause."  
+**Annotations**:  
+T1   LABEL 26 45   rapid increase in heart rate  
+T2   LABEL 50 57   sweating  
+
+---
+
+**Clinical Text**:  
+"She reports feeling faint and has noticed her skin turning yellow, especially around the eyes."  
+**Annotations**:  
+T1   LABEL 23 29   feeling faint  
+T2   LABEL 34 60   skin turning yellow  
+
+---
+
+**Clinical Text**:  
+"The patient is experiencing severe cramping in the abdominal area, along with bloating and nausea."  
+**Annotations**:  
+T1   LABEL 26 45   severe cramping  
+T2   LABEL 50 56   bloating  
+T3   LABEL 61 67   nausea  
+
+---
+
+**Clinical Text**:  
+"He has noticed tingling and numbness in his fingers and toes, which seems to worsen at night."  
+**Annotations**:  
+T1   LABEL 22 45   tingling and numbness  
+T2   LABEL 50 54   fingers  
+T3   LABEL 59 63   toes  
+
+---
+
+**Clinical Text**:  
+"The patient reports a constant feeling of dizziness, particularly when standing up from a seated position."  
+**Annotations**:  
+T1   LABEL 24 33   constant feeling of dizziness  
+T2   LABEL 38 71   standing up from a seated position  
+
+---
+
+**Clinical Text**:  
+"The patient complains of severe leg cramps that occur frequently during the night."  
+**Annotations**:  
+T1   LABEL 24 35   severe leg cramps  
+T2   LABEL 40 60   during the night  
+
+---
+
+**Clinical Text**:  
+"He has noticed blood in his stool and experiences abdominal pain, particularly after eating."  
+**Annotations**:  
+T1   LABEL 22 33   blood in his stool  
+T2   LABEL 38 54   abdominal pain  
+T3   LABEL 59 64   after eating  
+
+---
+
+**Clinical Text**:  
+"The patient feels lightheaded after standing for long periods and has had several fainting episodes."  
+**Annotations**:  
+T1   LABEL 24 39   lightheaded  
+T2   LABEL 44 63   fainting episodes  
+
+---
+
+**Clinical Text**:  
+"She is experiencing constant dry eyes, along with frequent headaches and sensitivity to light."  
+**Annotations**:  
+T1   LABEL 26 37   dry eyes  
+T2   LABEL 42 52   frequent headaches  
+T3   LABEL 57 77   sensitivity to light  
+
+---
+
+**Clinical Text**:  
+"The patient has developed sudden swelling in the face, accompanied by difficulty breathing."  
+**Annotations**:  
+T1   LABEL 25 39   sudden swelling in the face  
+T2   LABEL 44 62   difficulty breathing  
+
+---
+
+**Clinical Text**:  
+"The patient experiences sharp chest pain that radiates down the left arm, accompanied by shortness of breath."  
+**Annotations**:  
+T1   LABEL 28 49   sharp chest pain  
+T2   LABEL 54 78   radiates down the left arm  
+T3   LABEL 83 102   shortness of breath  
+
+---
+
+**Clinical Text**:  
+"He is having trouble sleeping at night due to persistent back pain and discomfort in the legs."  
+**Annotations**:  
+T1   LABEL 35 47   persistent back pain  
+T2   LABEL 52 72   discomfort in the legs  
+
+---
+
+**Clinical Text**:  
+"The patient has noticed increased bruising on his arms and legs, with no clear trauma or injury."  
+**Annotations**:  
+T1   LABEL 28 41   increased bruising  
+T2   LABEL 46 66   arms and legs  
+
+---
+
+**Clinical Text**:  
+"She is suffering from frequent headaches, along with nausea and blurred vision."  
+**Annotations**:  
+T1   LABEL 23 35   frequent headaches  
+T2   LABEL 40 46   nausea  
+T3   LABEL 51 64   blurred vision  
+
+---
+
+**Clinical Text**:  
+"The patient has developed a persistent cough, along with wheezing and chest tightness."  
+**Annotations**:  
+T1   LABEL 28 33   persistent cough  
+T2   LABEL 38 46   wheezing  
+T3   LABEL 51 65   chest tightness  
+
+---
+
+**Clinical Text**:  
+"The patient complains of severe itching on the scalp, along with redness and dandruff."  
+**Annotations**:  
+T1   LABEL 24 39   severe itching on the scalp  
+T2   LABEL 44 51   redness  
+T3   LABEL 56 64   dandruff  
+
+---
+
+**Clinical Text**:  
+"The child has been having frequent ear infections, along with a fever and irritability."  
+**Annotations**:  
+T1   LABEL 31 49   ear infections  
+T2   LABEL 54 58   fever  
+T3   LABEL 63 74   irritability  
+
+---
+
+**Clinical Text**:  
+"The patient reports experiencing tightness in the chest, along with difficulty catching their breath during physical exertion."  
+**Annotations**:  
+T1   LABEL 24 39   tightness in the chest  
+T2   LABEL 44 75   difficulty catching their breath  
+
+---
+
+**Clinical Text**:  
+"He has a history of blurred vision and halos around lights, especially at night."  
+**Annotations**:  
+T1   LABEL 26 42   blurred vision  
+T2   LABEL 47 71   halos around lights  
+
+---
+
+**Clinical Text**:  
+"The patient has noticed a persistent dry cough, especially in the evening, and occasionally feels short of breath."  
+**Annotations**:  
+T1   LABEL 24 35   persistent dry cough  
+T2   LABEL 40 61   short of breath  
+
+---
+
+**Clinical Text**:  
+"The patient complains of a headache that is accompanied by nausea and sensitivity to sound."  
+**Annotations**:  
+T1   LABEL 23 34   headache  
+T2   LABEL 39 46   nausea  
+T3   LABEL 51 70   sensitivity to sound  
+
+---
+
+**Clinical Text**:  
+"The patient has been experiencing chronic fatigue, along with weight gain and difficulty concentrating."  
+**Annotations**:  
+T1   LABEL 27 41   chronic fatigue  
+T2   LABEL 46 59   weight gain  
+T3   LABEL 64 84   difficulty concentrating  
+
+---
+
+**Clinical Text**:  
+"The patient reports abdominal bloating and discomfort, which worsens after eating large meals."  
+**Annotations**:  
+T1   LABEL 24 38   abdominal bloating  
+T2   LABEL 43 64   discomfort  
+T3   LABEL 69 90   after eating large meals  
+
+---
+
+**Clinical Text**:  
+"He has been experiencing tremors in his hands and difficulty with balance, especially when walking."  
+**Annotations**:  
+T1   LABEL 26 41   tremors in his hands  
+T2   LABEL 46 67   difficulty with balance  
+
+---
+
+**Clinical Text**:  
+"The patient presents with a fever, sore throat, and swollen tonsils."  
+**Annotations**:  
+T1   LABEL 24 29   fever  
+T2   LABEL 34 45   sore throat  
+T3   LABEL 50 65   swollen tonsils  
+
+---
+
+**Clinical Text**:  
+"The patient is experiencing numbness and tingling sensations in the arms and legs, which come and go."  
+**Annotations**:  
+T1   LABEL 28 51   numbness and tingling sensations  
+T2   LABEL 56 70   arms and legs  
+
+---
+
+**Clinical Text**:  
+"He is having difficulty swallowing and feels like something is stuck in his throat."  
+**Annotations**:  
+T1   LABEL 25 38   difficulty swallowing  
+T2   LABEL 43 70   something is stuck in his throat  
+
+---
+
+**Clinical Text**:  
+"The patient reports intermittent sharp pain in the chest that radiates to the back and jaw."  
+**Annotations**:  
+T1   LABEL 24 42   sharp pain in the chest  
+T2   LABEL 47 58   radiates to the back  
+T3   LABEL 63 69   jaw  
+
+---
+
+**Clinical Text**:  
+"She has been experiencing constant fatigue and feeling faint during exertion."  
+**Annotations**:  
+T1   LABEL 26 40   constant fatigue  
+T2   LABEL 45 61   feeling faint  
+
+---
+
+**Clinical Text**:  
+"The patient has a persistent ringing in the ears, especially in quiet environments."  
+**Annotations**:  
+T1   LABEL 25 41   ringing in the ears  
+T2   LABEL 46 68   quiet environments  
+
+---
+
+**Clinical Text**:  
+"He has been experiencing a dry mouth and frequent urination, particularly during the night."  
+**Annotations**:  
+T1   LABEL 24 34   dry mouth  
+T2   LABEL 39 56   frequent urination  
+T3   LABEL 61 72   during the night  
+
+---
+
+**Clinical Text**:  
+"The patient reports feeling nauseous and weak, along with unexplained weight loss over the last few months."  
+**Annotations**:  
+T1   LABEL 24 32   nauseous  
+T2   LABEL 37 42   weak  
+T3   LABEL 47 75   unexplained weight loss  
+
+---
+
+**Clinical Text**:  
+"He complains of dizziness and a feeling of imbalance, which is worse when turning his head quickly."  
+**Annotations**:  
+T1   LABEL 24 33   dizziness  
+T2   LABEL 38 63   feeling of imbalance  
+
+---
+
+**Clinical Text**:  
+"The patient reports feeling faint and dizzy, especially when standing up quickly or after long periods of sitting."  
+**Annotations**:  
+T1   LABEL 24 38   faint  
+T2   LABEL 43 48   dizzy  
+T3   LABEL 53 84   standing up quickly or after long periods of sitting  
+
+---
+
+**Clinical Text**:  
+"He is experiencing severe pain in the lower back, which radiates to the hips and thighs."  
+**Annotations**:  
+T1   LABEL 26 41   severe pain in the lower back  
+T2   LABEL 46 67   radiates to the hips  
+T3   LABEL 72 78   thighs  
+
+---
+
+**Clinical Text**:  
+"The patient complains of a painful swelling in the right knee after a recent fall."  
+**Annotations**:  
+T1   LABEL 24 38   painful swelling  
+T2   LABEL 43 52   right knee  
+
+---
+
+**Clinical Text**:  
+"She is experiencing difficulty breathing and feels tightness in her chest, especially during physical exertion."  
+**Annotations**:  
+T1   LABEL 26 43   difficulty breathing  
+T2   LABEL 48 64   tightness in her chest  
+
+---
+
+**Clinical Text**:  
+"The patient reports persistent ringing in the ears and occasional hearing loss."  
+**Annotations**:  
+T1   LABEL 24 40   ringing in the ears  
+T2   LABEL 45 62   hearing loss  
+
+---
+
+**Clinical Text**:  
+"He has had frequent nosebleeds, along with bruising and a tendency to bleed easily."  
+**Annotations**:  
+T1   LABEL 24 38   frequent nosebleeds  
+T2   LABEL 43 50   bruising  
+T3   LABEL 55 75   tendency to bleed easily  
+
+---
+
+**Clinical Text**:  
+"The patient has developed a red, itchy rash on the neck and face, which worsens in the evening."  
+**Annotations**:  
+T1   LABEL 24 35   red, itchy rash  
+T2   LABEL 40 44   neck  
+T3   LABEL 49 54   face  
+
+---
+
+**Clinical Text**:  
+"He describes feeling lightheaded and short of breath after climbing stairs, even with little exertion."  
+**Annotations**:  
+T1   LABEL 26 39   lightheaded  
+T2   LABEL 44 60   short of breath  
+
+---
+
+**Clinical Text**:  
+"The patient has a swollen left ankle and experiences sharp pain when walking."  
+**Annotations**:  
+T1   LABEL 24 34   swollen left ankle  
+T2   LABEL 39 60   sharp pain when walking  
+
+---
+
+**Clinical Text**:  
+"She reports feeling fatigued and experiencing difficulty concentrating on tasks, especially after a long day."  
+**Annotations**:  
+T1   LABEL 24 31   fatigued  
+T2   LABEL 36 65   difficulty concentrating on tasks  
+
+---
+
+**Clinical Text**:  
+"The patient complains of frequent indigestion and discomfort in the upper abdomen after meals."  
+**Annotations**:  
+T1   LABEL 24 39   frequent indigestion  
+T2   LABEL 44 70   discomfort in the upper abdomen  
+
+---
+
+**Clinical Text**:  
+"He has noticed blood in his urine, along with pain in the lower abdomen and groin area."  
+**Annotations**:  
+T1   LABEL 24 38   blood in his urine  
+T2   LABEL 43 67   pain in the lower abdomen  
+T3   LABEL 72 77   groin area  
+
+---
+
+**Clinical Text**:  
+"The patient has a history of frequent headaches and visual disturbances, including seeing flashes of light."  
+**Annotations**:  
+T1   LABEL 24 40   frequent headaches  
+T2   LABEL 45 69   visual disturbances  
+T3   LABEL 74 97   flashes of light  
+
+---
+
+**Clinical Text**:  
+"She complains of swelling in both hands and wrists, along with stiffness and limited mobility."  
+**Annotations**:  
+T1   LABEL 24 34   swelling in both hands  
+T2   LABEL 39 58   stiffness  
+T3   LABEL 63 81   limited mobility  
+
+---
+
+**Clinical Text**:  
+"He has been feeling very weak and tired, especially in the mornings, and experiences dizziness when standing."  
+**Annotations**:  
+T1   LABEL 26 30   weak  
+T2   LABEL 35 40   tired  
+T3   LABEL 45 61   dizziness when standing  
+
+---
+
+**Clinical Text**:  
+"The patient has a history of dry, cracked skin on the feet, which becomes worse in cold weather."  
+**Annotations**:  
+T1   LABEL 24 46   dry, cracked skin  
+T2   LABEL 51 65   feet  
+T3   LABEL 70 87   worse in cold weather  
+
+---
+
+**Clinical Text**:  
+"He complains of painful, swollen joints, especially in the fingers and toes."  
+**Annotations**:  
+T1   LABEL 24 38   painful, swollen joints  
+T2   LABEL 43 58   fingers  
+T3   LABEL 63 68   toes  
+
+---
+
+**Clinical Text**:  
+"She has noticed a gradual loss of hearing in both ears, which has been accompanied by a sensation of fullness."  
+**Annotations**:  
+T1   LABEL 24 41   gradual loss of hearing  
+T2   LABEL 46 74   sensation of fullness  
+
+---
+
+**Clinical Text**:  
+"The patient has a persistent cough with mucus, along with occasional wheezing."  
+**Annotations**:  
+T1   LABEL 24 37   persistent cough with mucus  
+T2   LABEL 42 50   occasional wheezing  
+
+---
+
+**Clinical Text**:  
+"He describes sharp, stabbing pain in his side that worsens with movement or deep breaths."  
+**Annotations**:  
+T1   LABEL 26 48   sharp, stabbing pain  
+T2   LABEL 53 74   worsens with movement or deep breaths  
+
+---
+
+**Clinical Text**:  
+"She reports having difficulty catching her breath and chest tightness during physical activity."  
+**Annotations**:  
+T1   LABEL 24 44   difficulty catching her breath  
+T2   LABEL 49 66   chest tightness  
+
+---
+
+**Clinical Text**:  
+"The patient has a noticeable rash on the chest and arms, which feels warm to the touch."  
+**Annotations**:  
+T1   LABEL 24 34   rash on the chest  
+T2   LABEL 39 44   arms  
+T3   LABEL 49 68   feels warm to the touch  
+
+---
+
+**Clinical Text**:  
+"He has been feeling extremely fatigued, with occasional joint pain, particularly in the knees and elbows."  
+**Annotations**:  
+T1   LABEL 26 42   extremely fatigued  
+T2   LABEL 47 60   joint pain  
+T3   LABEL 65 78   knees and elbows  
+
+---
+
+**Clinical Text**:  
+"The patient complains of swelling in both ankles, along with difficulty walking and pain while standing."  
+**Annotations**:  
+T1   LABEL 24 40   swelling in both ankles  
+T2   LABEL 45 65   difficulty walking  
+T3   LABEL 70 90   pain while standing  
+
+---
+
+**Clinical Text**:  
+"He has developed a sudden rash on the face and neck, which is itchy and spreading quickly."  
+**Annotations**:  
+T1   LABEL 24 33   rash on the face  
+T2   LABEL 38 43   neck  
+T3   LABEL 48 60   itchy  
+
+---
+
+**Clinical Text**:  
+"The patient has been experiencing frequent episodes of dizziness, especially when standing up from a seated position."  
+**Annotations**:  
+T1   LABEL 24 39   frequent episodes of dizziness  
+T2   LABEL 44 72   standing up from a seated position  
+
+---
+
+**Clinical Text**:  
+"She reports feeling weak and fatigued, along with sudden weight loss over the past few weeks."  
+**Annotations**:  
+T1   LABEL 24 34   weak and fatigued  
+T2   LABEL 39 69   sudden weight loss  
+
+---
+
+**Clinical Text**:  
+"The patient describes a burning sensation in the chest and occasional regurgitation of food after meals."  
+**Annotations**:  
+T1   LABEL 26 43   burning sensation in the chest  
+T2   LABEL 48 81   regurgitation of food after meals  
+
+---
+
+**Clinical Text**:  
+"He has been having trouble sleeping, with frequent waking during the night due to leg cramps."  
+**Annotations**:  
+T1   LABEL 26 42   trouble sleeping  
+T2   LABEL 47 60   frequent waking during the night  
+T3   LABEL 65 80   leg cramps  
+
+---
+
+**Clinical Text**:  
+"The patient reports muscle weakness in the arms, especially after prolonged use, and difficulty lifting objects."  
+**Annotations**:  
+T1   LABEL 24 38   muscle weakness in the arms  
+T2   LABEL 43 67   difficulty lifting objects  
+
+---
+
+**Clinical Text**:  
+"She has noticed increased sensitivity to sunlight, along with a rash on the face and neck."  
+**Annotations**:  
+T1   LABEL 24 51   increased sensitivity to sunlight  
+T2   LABEL 56 77   rash on the face and neck  
+
+---
+
+**Clinical Text**:  
+"The patient complains of a dry, scratchy throat and difficulty swallowing, which has persisted for several days."  
+**Annotations**:
+T1   LABEL 24 39   dry, scratchy throat  
+T2   LABEL 44 63   difficulty swallowing  
+
+---
+
+**Clinical Text**:  
+"He has been experiencing severe leg cramps and swelling in the calves, which worsens after standing for long periods."  
+**Annotations**:  
+T1   LABEL 26 40   severe leg cramps  
+T2   LABEL 45 56   swelling in the calves  
+
+---
+
+**Clinical Text**:  
+"She reports joint pain and stiffness, especially in the mornings, along with mild swelling in the hands and feet."  
+**Annotations**:  
+T1   LABEL 24 38   joint pain and stiffness  
+T2   LABEL 43 55   mild swelling  
+T3   LABEL 60 80   hands and feet  
+
+---
+
+**Clinical Text**:  
+"The patient complains of a constant feeling of nausea and bloating, particularly after meals."  
+**Annotations**:  
+T1   LABEL 24 34   constant feeling of nausea  
+T2   LABEL 39 47   bloating  
+T3   LABEL 52 58   after meals  
+
+---
+
+**Clinical Text**:  
+"He has noticed a gradual increase in hair loss, especially on the crown of his head."  
+**Annotations**:  
+T1   LABEL 24 39   gradual increase in hair loss  
+T2   LABEL 44 72   on the crown of his head  
+
+---
+
+**Clinical Text**:  
+"The patient has been experiencing frequent urination, especially at night, along with a feeling of urgency."  
+**Annotations**:  
+T1   LABEL 24 43   frequent urination  
+T2   LABEL 48 59   at night  
+T3   LABEL 64 76   feeling of urgency  
+
+---
+
+**Clinical Text**:  
+"He describes a dull, persistent headache that worsens with any form of physical activity."  
+**Annotations**:  
+T1   LABEL 24 40   dull, persistent headache  
+T2   LABEL 45 77   worsens with any form of physical activity  
+
+---
+
+**Clinical Text**:  
+"She is experiencing occasional blurred vision, especially when reading or using her phone for extended periods."  
+**Annotations**:  
+T1   LABEL 26 42   occasional blurred vision  
+T2   LABEL 47 81   when reading or using her phone  
+
+---
+
+**Clinical Text**:  
+"The patient reports feeling extremely thirsty and urinating more frequently than usual."  
+**Annotations**:  
+T1   LABEL 24 44   feeling extremely thirsty  
+T2   LABEL 49 79   urinating more frequently  
+
+---
+
+**Clinical Text**:  
+"He has developed a persistent sore throat and difficulty swallowing, which has been getting worse over the past few days."  
+**Annotations**:  
+T1   LABEL 24 38   persistent sore throat  
+T2   LABEL 43 62   difficulty swallowing  
+T3   LABEL 67 85   getting worse over the past few days  
+
+---
+
+**Clinical Text**:  
+"She complains of tightness in the chest and a dry cough, which have been worsening in the evenings."  
+**Annotations**:  
+T1   LABEL 24 40   tightness in the chest  
+T2   LABEL 45 56   dry cough  
+T3   LABEL 61 83   worsening in the evenings  
+
+---
+
+**Clinical Text**:  
+"The patient is having trouble with balance, especially when standing or walking on uneven surfaces."  
+**Annotations**:  
+T1   LABEL 24 39   trouble with balance  
+T2   LABEL 44 72   when standing or walking on uneven surfaces  
+
+---
+
+**Clinical Text**:  
+"He reports pain and swelling in the ankle joint, along with difficulty moving the foot."  
+**Annotations**:  
+T1   LABEL 24 39   pain and swelling in the ankle joint  
+T2   LABEL 44 67   difficulty moving the foot  
+
+---
