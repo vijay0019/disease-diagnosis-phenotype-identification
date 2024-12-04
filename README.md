@@ -1,4 +1,4 @@
-# NLP - Rare Disease Prediction and Classification
+# NLP - Final Project
 
 NLP project: Identifying the phenotype terms using Bio_ClinicalBERT and then performing diagnosis given the identified phenotypes using meta-llama/Llama-3.2-3B-Instruct.
 
@@ -6,13 +6,15 @@ NLP project: Identifying the phenotype terms using Bio_ClinicalBERT and then per
 
 Everything was run using the [UAB Cheaha Supercomputer](https://rc.uab.edu/pun/sys/dashboard/)
 
-# Dataset
-
-We are using the Rare Disease V1 Corpus from [Project NLP4Rare-cm-uc3m](https://github.com/cadovid/nlp4rare). For privacy reasons we couldn't upload the dataset to github, if you need it to run this project, please request it at, [Find the Email Address](https://github.com/isegura/NLP4RARE-CM-UC3M).
-
 # Model
 
-The model we are using for finetuning is Meta-Llama\Llama 3.2 3B Instruct from [Hugging Face Meta Llama 3.2 3B Instruct](https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct).
+The model we are using for finetuning is Meta-Llama\Llama 3.2 3B Instruct from [Hugging Face Meta Llama 3.2 3B Instruct](https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct) and Bio_ClinicalBert
+
+# Llama 3.2 3B Rare Disease Prediction and Classification
+
+## Dataset
+
+We are using the Rare Disease V1 Corpus from [Project NLP4Rare-cm-uc3m](https://github.com/cadovid/nlp4rare). For privacy reasons we couldn't upload the dataset to github, if you need it to run this project, please request it at, [Find the Email Address](https://github.com/isegura/NLP4RARE-CM-UC3M).
 
 ## Downloading the Model
 
@@ -30,13 +32,13 @@ In the root directory:
 1. `rare_disease_training.py` is where all the training and setting of parameters happens
 2. To pass the training job, run `sbatch rare_disease_training.sh` found in the model-download-scripts directory.
 
-# Running the Predictor/Classifier
+## Running the Predictor/Classifier
 
-1. # Using Jupyter Notebook, run the file `rare_disease_predict.ipynb`
+1. Using Jupyter Notebook, run the file `rare_disease_predict.ipynb`
 
-# disease-diagnosis-phenotype-identification
+# Bio_ClinicalBERT
 
-NLP project:
-Identifying the phenotype terms using Bio_ClinicalBERT and then performing diagnosis given the identified phenotypes using `meta-llama/Llama-3.2-3B-Instruct`.
+## Models
 
-> > > > > > > origin/vj
+1. `model_scripts/diagnosisANDphonotype/bert_finetune_raredis.ipynb`
+2. `model_scripts/diagnosisANDphonotype/bert_finetune_synthetic.ipynb`
