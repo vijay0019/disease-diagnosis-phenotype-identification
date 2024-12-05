@@ -14,7 +14,7 @@ The model we are using for finetuning is Meta-Llama\Llama 3.2 3B Instruct from [
 
 ## Dataset
 
-We are using the Rare Disease V1 Corpus from [Project NLP4Rare-cm-uc3m](https://github.com/cadovid/nlp4rare). For privacy reasons we couldn't upload the dataset to github, if you need it to run this project, please request it at, [Find the Email Address](https://github.com/isegura/NLP4RARE-CM-UC3M).
+We are using the Rare Disease V1 Corpus from [Project NLP4Rare-cm-uc3m](https://github.com/cadovid/nlp4rare). For copyright reasons we couldn't upload the dataset to github, if you need it to run this project, please request it at, [Find the Email Address](https://github.com/isegura/NLP4RARE-CM-UC3M).
 
 ## Downloading the Model
 
