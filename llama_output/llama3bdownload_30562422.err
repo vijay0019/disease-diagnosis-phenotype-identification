@@ -1,0 +1,6 @@
+
+The following have been reloaded with a version change:
+  1) CUDA/12.6.0 => CUDA/12.2.0
+
+Downloading shards:   0%|          | 0/2 [00:00<?, ?it/s]Downloading shards:  50%|█████     | 1/2 [01:58<01:58, 118.41s/it]Downloading shards: 100%|██████████| 2/2 [02:33<00:00, 69.30s/it] Downloading shards: 100%|██████████| 2/2 [02:33<00:00, 76.67s/it]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:08<00:08,  8.34s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:10<00:00,  4.58s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:10<00:00,  5.14s/it]
